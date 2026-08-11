@@ -1,0 +1,90 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>etapa7</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #9460e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Colour Me Purple;
+        }
+
+        .pagina {
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .imagem-principal {
+            width: min(60vw, 400px);
+            height: min(60vw, 400px);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        .texto {
+            margin-top: 30px;
+            color: black;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .mensagem-escondida {
+            display: none;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <img
+            class="imagem-principal"
+            src="cinerárias.jpg"
+            alt="Imagem principal"
+        >
+
+        <p class="texto">
+        Parabéns! Você conseguiu passar do nível 0 de 9 deles! eu sei o quanto você é inteligente então não dúvido que você vai chegar até o final, mas já vou avisando: não vai ser fácil, gatão
+        </p>
+
+        <audio id="musica" autoplay loop>
+            <source src="Insista_em_mim.mp3" type="audio/mpeg">
+        </audio>
+
+    <script>
+        const musica = document.getElementById("musica");
+
+        musica.volume = 1.0;
+
+        function iniciarMusica() {
+            musica.play().catch(() => {});
+        }
+
+        iniciarMusica();
+
+        document.addEventListener("click", iniciarMusica, { once: true });
+        document.addEventListener("touchstart", iniciarMusica, { once: true });
+        document.addEventListener("keydown", iniciarMusica, { once: true });
+    </script>
+
+</body>
+
+</html>
