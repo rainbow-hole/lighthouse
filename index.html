@@ -6,21 +6,28 @@
 
     <title>Lighthouse</title>
 
-    <style>
+   <style>
+           @font-face {
+    font-family: 'Colour Me Purple';
+    src: url("Colour Me Purple.ttf") format("truetype");
+}
         body {
-    margin: 0;
-    min-height: 100vh;
-    background-image: url("wallpaper4.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Colour Me Purple;
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("wallpaper4.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+        h1 {
+            font-family: 'Colour Me Purple', sans-serif;
+        }
+        
         .pagina {
             width: 90%;
             max-width: 700px;
@@ -37,11 +44,13 @@
             border-radius: 4px;
         }
 
-        .texto {
+       .texto {
             margin-top: 30px;
             color: white;
             font-size: 22px;
             line-height: 1.6;
+            font-weight: 200;
+            font-family: 'Colour Me Purple', sans-serif;
         }
 
         audio {
